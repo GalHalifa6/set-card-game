@@ -32,6 +32,10 @@ This project implements the **Set card game** in Java (or whichever language you
 - 🧪 Unit tests to validate game logic.  
 
 ---
+# there are two main modes:
+1) Human players
+2) Bot players
+you can change the setting in the config.properties file
 
 ## 🚀 Installation & Run
 1. Clone the repository:  
