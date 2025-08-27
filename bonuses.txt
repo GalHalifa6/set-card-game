@@ -1,0 +1,47 @@
+BONUS CHALLENGE FORM
+--------------------
+
+For each bonus challenge you have implemented, please replace the sentence "We are not entitled to this bonus."
+with a short description of:
+
+1. How it was implemented in your code
+2. Where it was used (in which class methods).
+3. How you tested that it is working correctly.
+
+--------------------
+
+1. Fully supporting all configuration fields and avoiding the use of magic numbers
+
+1. we used all the env.config properties in our code and supported it
+2. almost every class
+3. we changed the properties and checked that the configuartion has changed in game
+
+
+--------------------
+
+2. Terminating all threads (that you created) gracefully and in reverse order to the order they were created in.
+
+We are not entitled to this bonus.
+
+--------------------
+
+3. Handling the config.turnTimeoutMillis value as follows:
+config.turnTimeoutMillis < 0: display nothing.
+config.turnTimeoutMillis = 0: display a timer since the last action (reshuffle or set collected).
+Note: in modes without a countdown timer the dealer must ensure there is always at least one legal set on the table.
+
+1. we made enum GameMode which has 3 game modes (countdown , countup , nocount) 
+2. the game mode was set in the dealer consturctor and the changes was on update time method and the dealer inner loop method
+3. we changed the configuration property - TurnTimeoutSeconds to -1, 0 and any other number to check that every game mode is supported
+
+
+--------------------
+
+4. Making sure that the threads do not wake up unless some actual job needs to be done (e.g., a value needs to be
+changed on the display, key input needs to be handled, etc.) and the only threads created by you are:
+1 thread per player + 1 additional thread for non-human players.
+
+1. we made sure we dont use other threads but the ones that stated above.
+2. dealer class, player class.
+3. we printed to console the sleeps and wake ups of different threads and checked that they sleep and wake up on time.
+
