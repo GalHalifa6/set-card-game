@@ -18,7 +18,11 @@ A valid set is a group of three cards such that, for each attribute:
 1. Lay out 12 cards on the table.  
 2. The goal is to find a "set" – a triple that satisfies the rule above.  
 3. If no set exists on the table, deal 3 more cards.  
-4. The game ends when the deck is empty and no sets remain.  
+4. The game ends when the deck is empty and no sets remain. 
+
+for two players:
+1) player 1 keyboards: qwerasdfzxcv
+2) player 2 keyboards: poiu;lkj/.,m
 
 ---
 
